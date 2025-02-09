@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Review Form-TechSphere</title>
+        <style>
+            body
+            {
+                background-color:rgb(246, 234, 219);
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: rgb(33, 85, 86);
+                font-size: 28px;
+            }
+            h1
+            {
+                font-style: normal;
+                color: rgb(18, 63, 71);
+                text-align: center;
+                text-decoration-line: underline;
+            }
+            form
+            {
+                background-color:rgb(255, 225, 225);
+                border: 10px solid;
+                padding: 10px;
+                margin: 10px;
+                position: relative;
+                align-items: center;
+                width: 550px;
+                margin: 0 auto;
+                border-radius: 20px;
+            }
+            #text
+            {
+                border: 2px solid rgb(18, 63, 71);
+                height: 30px;
+                width: 250px;
+                background-color: white;
+                font-size: 16px;
+            }
+            #submit
+            {
+                color: rgb(255, 255, 255);
+                background-color: rgb(92, 202, 92);
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+                text-align: center;
+                align-content: center;
+                height: 40px;
+            }
+            #upload
+            {
+                height: 40px;
+                width: 200px;
+                color:rgb(0, 0, 0);
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 16px;
+                transition: backgroundd 0.3s;
+                background-color: white;
+            }
+            .navbar {
+            background-color: rgb(18, 63, 71); 
+            overflow: hidden;
+            display: flex;
+            align-items:center;
+            justify-content: flex-end;
+            right: 10px;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: aliceblue;
+            text-decoration: none;
+            padding: 14px 20px;
+            font-size: 18px;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: rgb(35, 90, 99);
+            border-radius: 5px;
+            transform: scale(1.1);
+        }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="homepage.html">Home</a>
+            <a href="reviewform.html">Gadget Review Form</a>
+            <a href="gadgetdisp.html">Gadget Display</a>
+            <a href="techart.html">Technical Articles</a>
+        </div>
+        <h1>
+            Tech Review Submission Form
+        </h1>
+        <form>
+            <label> Your Name </label>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <input type="text" id="text" placeholder="abc"><br><br>
+
+            <label> Email </label>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <input type="text" id="text"  placeholder="xyz@domain.in"><br><br>
+
+            <label> Gadget </label>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <select  id="text" > 
+                <option> Phone </option>
+                <option> Tablet </option>
+                <option> Laptop</option>
+                <option> Earphones</option>
+                <option> Hair dryer</option>
+                <option> Smart watch</option>
+                <option> Other</option>
+            </select>
+            <br><br>
+
+            <label> Brand </label>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <select  id="text"> 
+                <option> HP </option>
+                <option> Dell</option>
+                <option> Apple</option>
+                <option> Acer</option>
+                <option> Philips</option>
+                <option> Samsung</option>
+                <option> Vivo</option>
+                <option> Realme</option>
+                <option> Redmi</option>
+                <option> Boat</option>
+                <option> Firebolt</option>
+                <option> Other</option>
+            </select>
+            <br><br>
+
+            <label > Rate the product you are reviewing(1-5) </label><br>
+            <input type="radio" name="star">⭐<br>
+            <input type="radio" name="star">⭐⭐<br>
+            <input type="radio" name="star">⭐⭐⭐<br>
+            <input type="radio" name="star">⭐⭐⭐⭐<br>
+            <input type="radio" name="star">⭐⭐⭐⭐⭐
+            <br><br>
+            <label> Review Description </label>
+            &nbsp&nbsp&nbsp
+            <textarea  id="text" ></textarea>
+            <br><br>
+
+            <div>
+            <label> Upload product image here </label>
+            <input type="file" id="upload" style="display: none;"/>
+            <button id="upload" accept="image/*" onclick="document.getElementById('upload').click()"> Upload File </button>
+            
+            </div>
+            <br><br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <input type="submit" id="submit" value="Submit Review">
+        </form>
+        <br>    
+    </body>
+</html>
+    
+
+
